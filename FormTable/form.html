@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        label{
+            color: white;
+            background-color: green;
+            display: block;
+        }
+        table{
+            color: yellow;
+        }
+        input, select{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <form action="process.html" method="post">
+        <fieldset>
+            <legend>Staff account</legend>
+            <table>
+                <tr>
+                    <td><label>Fullname</label></td>
+                    <td>
+                        <input type="text" name="fn" placeholder="fullname">
+                        <input type="hidden" name="code" value="123">
+                        <input type="search">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Department</label></td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">HR</option>
+                            <option value="" selected>IT</option>
+                            <option value="">Sale</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Salary</label></td>
+                    <td>
+                        <input type="range" name="" id="" min="20000000" max="100000000">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Phone</label></td>
+                    <td><input type="tel"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Link FB</label></td>
+                    <td>
+                        <input type="url" name="" id="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top"><label for="">Avatar</label></td>
+                    <td>
+                        <input type="image" src="resource/avatar11.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Date of birth</label></td>
+                    <td>
+                        <input type="date" name="dob">
+                        <input type="datetime-local">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" name="pw"></td>
+                </tr>
+                <tr>
+                    <td><label for="">My color</label></td>
+                    <td><input type="color" name="color" value="#ff0000"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Languages</label></td>
+                    <td>
+                        <input type="checkbox" checked name="language"> English
+                        <input type="checkbox" name="language"> Jananess
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" checked> Male
+                        <input type="radio" name="gender"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Upload</label></td>
+                    <td><input type="file" accept="image/*"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Month</label></td>
+                    <td>
+                        <input type="month">
+                        <input type="week">
+                        <input type="time">
+                        <input type="number" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top"><label for="">Description</label></td>
+                    <td>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Store">
+                        <input type="reset" value="Cancel">
+                        <!-- <button type="submit">Save</button> -->
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
