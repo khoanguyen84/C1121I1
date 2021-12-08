@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Ovewview</title>
+    
+</head>
+
+<body>
+    
+    <button onmouseover="this.innerText = new Date(); this.style.color = 'red';"
+        onmouseout="this.innerText = 'Show datetime'; this.style.color = '';">
+        Show datetime</button>
+
+    <p onclick="document.getElementsByTagName('span')[0].innerText = new Date()">Hover to show datetime</p>
+    <span></span>
+    <br>
+    <input type="color" onchange="document.getElementsByTagName('body')[0].style.backgroundColor = this.value;">
+    <br>
+    Password <input type="password" oninput="document.getElementsByTagName('input')[2].value = this.value">
+    <br>
+    Show PW<input type="text">
+    <br>
+    Password <input type="password">
+    <button onclick="
+        if(this.innerText == 'Show'){
+            document.getElementsByTagName('input')[3].type = 'text';
+            this.innerText = 'Hide';
+        }
+        else{
+            document.getElementsByTagName('input')[3].type = 'password';
+            this.innerText = 'Show';
+        }
+    ">
+        Show</button>
+    <br>
+    Password <input type="password">
+    <button onclick="showPW()">Show</button>
+    
+
+    <script src="index.js"></script>
+</body>
+
+</html>
