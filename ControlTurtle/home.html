@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="images/left.jpg" id="i1" alt="1" onclick="changeImage(1)"><br>
+    <img src="images/down.jpg" id="i2" alt="" onclick="changeImage(2)"><br>
+    <img src="images/right.jpg" id="i3" alt="" onclick="changeImage(3)"><br>
+    <img src="images/up.jpg" id="i4" alt="" onclick="changeImage(4)">
+
+    <script>
+
+        function changeImage(id) {
+            let number = Math.floor(Math.random() * 3 + 1);
+            let filename = id + '_' + number;
+            let img = document.getElementById('i' + id);
+            img.src = filename + '.' + 'jpg';
+            img.alt = filename + '.' + 'jpg';
+            checkWin();
+        }
+
+        function checkWin() {
+            let i1 = document.getElementById('i1');
+            let i2 = document.getElementById('i2');
+            let i3 = document.getElementById('i3');
+            let i4 = document.getElementById('i4');
+            let result = i1.alt;
+            alert(result);
+            // if(result == "1_1.jpg1_2.jpg1_3.jpg1_4.jpg")
+            //     return true;
+            // return false;
+        }
+    </script>
+</body>
+
+</html>
