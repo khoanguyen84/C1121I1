@@ -8,14 +8,18 @@ function sum(){
 }
 
 // sum();
-document.getElementsByTagName('input')[1].addEventListener("change", function(){
-    if(Number(document.getElementsByTagName('input')[1].value == 100)){
-        document.getElementsByTagName("button")[0].addEventListener('click', sum);
-    }
-    else{
-        document.getElementsByTagName("button")[0].removeEventListener('click', sum);
-    }    
-})
+// document.getElementsByTagName('input')[1].addEventListener("change", function(){
+//     if(Number(document.getElementsByTagName('input')[1].value == 100)){
+//         document.getElementsByTagName("button")[0].addEventListener('click', sum);
+//     }
+//     else{
+//         document.getElementsByTagName("button")[0].removeEventListener('click', sum);
+//     }    
+// })
 
 // console.log(1 - 'a');
 // console.log(1 - '1');
+
+(function(){
+    console.log('a');
+})();
