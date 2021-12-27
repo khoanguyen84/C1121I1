@@ -38,6 +38,14 @@ function calcPrimaryInMatrix(matrix) {
     console.log("Total of values in primary of matrix: ", calcPrimaryInMatrix(matrix))
 })();
 
+(function ready2() {
+    let matrix = createMatrix(10, 10, 90);
+    console.log(matrix);
+    console.log("Total of even in matrix: ",calcEvenNumberInMatrix(matrix));
+    console.log("Total of values in primary of matrix: ", calcPrimaryInMatrix(matrix))
+})();
+
+
 // let matrix = createMatrix(10, 10, 90);
 // let total = calcEvenNumberInMatrix(matrix);
 // console.log(total)

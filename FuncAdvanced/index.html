@@ -35,6 +35,8 @@
             }
         }
     </script> -->
+    <input type="text" onchange="changeData(this)">
+    <button id="submit">Submit</button>
     <center>
         <span>Type anything slowly</span>
         <form name="phom">
@@ -48,16 +50,30 @@
         let index = 0;
         var text = "";
         function typeText() {
-            if(text.length == realData.length){
+            if (text.length == realData.length) {
                 text = "";
                 index = 0;
             }
-            else{
+            else {
                 text += `${realData[index]}`;
                 index++;
             }
             document.getElementsByTagName("textarea")[0].value = text;
         }
+
+        function changeData(element) {
+            if (element.value == "hello") {
+                document.querySelector("#submit").addEventListener("click", function () {
+                    alert("Hello")
+                })
+            }
+            else{
+                document.querySelector("#submit").removeEventListener("click", function () {
+                    alert("Hello")
+                })
+            }
+        }
+
     </script>
 </body>
 
