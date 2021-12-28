@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="2">
+                <button id="powerIP6" onclick="power('iphone6')">Off</button>
+            </td>
+            <td id="eneryIP6"></td>
+            <td></td>
+            <td colspan="2">
+                <button id="powerIP7" onclick="power('iphone7')">Off</button>
+            </td>
+            <td id="eneryIP7"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" id="msgIP6">
+            </td>
+            <td>
+                <button id="sendIP6" onclick="sendMessage('iphone6')">Send</button>
+            </td>
+            <td></td>
+            <td colspan="2">
+                <input type="text" id="msgIP7">
+            </td>
+            <td>
+                <button id="sendIP7" onclick="sendMessage('iphone7')">Send</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="vertical-align: top;">
+                <ul id="inboxIP6">
+                </ul>
+            </td>
+            <td></td>
+            <td colspan="3" style="vertical-align: top;">
+                <ul id="inboxIP7">
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <script src="phone.js"></script>
+</body>
+</html>
